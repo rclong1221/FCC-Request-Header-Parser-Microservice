@@ -12,10 +12,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/whoami", (req, res) => {
+  var ip = req.ip.slice(":");
   var l = req.headers["accept-language"];
   var s = req.headers["user-agent"];
   var o = {
-    "ipaddress": req.ip,
+    "ipaddress": ip[ip.length - 1],
     "language": l.slice(0, l.indexOf(",")),
     "software": s.slice(s.indexOf("(") + 1, s.indexOf(")"))
   };
