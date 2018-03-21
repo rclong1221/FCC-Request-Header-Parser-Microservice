@@ -7,7 +7,11 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}...`);
 });
 
-app.get('/whoami', (req, res) => {
+app.get("/", (req, res) => {
+  res.send("Home page");
+});
+
+app.get("/whoami", (req, res) => {
   var l = req.headers["accept-language"];
   var s = req.headers["user-agent"];
   var o = {
