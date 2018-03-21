@@ -1,0 +1,22 @@
+{
+  "name": "fcc-request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "FCC request header parser microservice project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rclong1221/FCC-Request-Header-Parser-Microservice.git"
+  },
+  "author": "R.C. Long",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rclong1221/FCC-Request-Header-Parser-Microservice/issues"
+  },
+  "homepage": "https://github.com/rclong1221/FCC-Request-Header-Parser-Microservice#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
